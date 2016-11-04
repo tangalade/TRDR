@@ -1,0 +1,74 @@
+This is from an article on NASDAQ.com suggesting a trading strategy. 
+
+Revenue: Compare most recent annual totals & quarters (compare 1st to 1st of last year.)
+ PASS : this year > last year
+ FAIL : otherwise
+EPS: Same as revenue
+ same criteria as revenue
+
+Revenue and EPS source : http://www.nasdaq.com/symbol/goog/revenue-eps
+
+Return on Equity: (after tax ROE)
+ PASS : this year > last year > 2 years ago
+ FAIL : otherwise
+
+ROE source: http://www.nasdaq.com/symbol/goog/financials?query=ratios
+
+Analyst Recommendations: 
+ PASS : buy or strong buy
+ FAIL : otherwise
+
+source: http://www.nasdaq.com/symbol/goog/analyst-research
+
+Earnings Surprises:
+ PASS : all 4 past quarter surprises have been positive
+ FAIL : otherwise
+
+source: http://www.nasdaq.com/symbol/goog/earnings-surprise
+
+Forecast: 
+ PASS : consensus EPS forecast increase every year
+ FAIL : otherwise
+
+source: http://www.nasdaq.com/symbol/goog/earnings-forecast
+
+Earnings growth: 
+ PASS : Long Term 5 year growth > 8%
+ FAIL : otherwise
+
+source: http://www.nasdaq.com/symbol/goog/earnings-growth
+
+PEG ratio:
+ PASS : PEG Ratio > 1.0
+ FAIL : otherwise
+
+source: http://www.nasdaq.com/symbol/goog/peg-ratio
+
+Industry Price Earnings:
+ PASS : Company > Industry
+ FAIL : otherwise
+
+source : http://www.nasdaq.com/symbol/goog/analyst-research
+
+Days to Cover:
+ PASS : days to cover < 2 days
+ FAIL : otherwise
+
+source: http://www.nasdaq.com/symbol/goog/short-interest
+
+Insider Trading:
+ PASS : Net activity for past 3 months > 0
+ FAIL : Otherwise
+
+note : parenthesis means negative
+source: http://www.nasdaq.com/symbol/goog/insider-trades
+
+Weighted Alpha
+ PASS : alpha > 0
+ FAIL : otherwise
+
+source: good luck with this one
+ STEPS: 
+ 1. Go to : http://www.nasdaq.com/reference/BarChartSectors.stm?sym=goog
+ 2. goto first link that isn't SIC
+ 3. it's on that page

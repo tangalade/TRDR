@@ -1,0 +1,11 @@
+--------------------------- BEGIN RECORD RATE DATA -----------------------------
+
+weight : 2 days (6/13/12 - 6/15/12)
+
+Delay between Stock Records (let this be X)
+E[X] = .601s
+1 sd = .663s
+
+Avg rate of Stock Records : 1 per second
+
+----------------------------- END RECORD RATE DATA -----------------------------

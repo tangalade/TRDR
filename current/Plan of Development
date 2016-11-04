@@ -1,0 +1,43 @@
+Plan of Development
+
+This is an easy system to augment. I built it specifically for this purpose.
+
+
+V1
+ Stream Thread
+  pre-chosen stock with pre-chosen parameters (last Price & symbol)
+ Analysis Thread
+  not implemented
+ GUI Thread
+  gets username / pswd / source
+  console output of current stock state
+
+V1.1
+ Stream Thread
+  console-chosen stock with pre-chosen parameters (last Price & symbol)
+  debugs
+ Analysis Thread
+  not implemented
+ GUI Thread
+  console input stock choice
+  console output of current stock state
+
+V2
+ Stream Thread
+ Analysis Thread
+ GUI Thread
+ Sim Thread
+
+
+V3
+ Stream Thread
+  1 stock with pre-chosen parameters (last Price & symbol)
+  has a debug option
+ Analysis Thread only runs the Recorder(lastPrice for 1 stock) & Indicator keeps track of Moving Average
+ GUI Thread is console input only & debugging output.
+  commands:
+   start stream (debug option & choice of stock)
+   exit
+   show stream (text-only in another window)
+   stop show stream
+ Sim Thread

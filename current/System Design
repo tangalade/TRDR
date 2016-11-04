@@ -1,0 +1,40 @@
+
+The System
+
+ABSTRACT
+I see a GUI that updates as it recieves data. I can mess with it and the programming behind it.
+Additionally, I can have algorithms that process the data and respond to it.
+Finally, I can record data and program a meta-algorithm to process this
+The recorder will be able to record the meta-algorithm's performance too.
+
+THREADVIEW
+ Stream Thread
+  Roles
+   recieves data from server
+    keeps streaming session alive
+    identifies "heartbeats" & quote information
+   sends updates to GUI & analysis threads
+ GUI Thread
+  Roles
+   Graphical User Interface
+ Analysis Thread
+  Roles
+   Distributes messages to all analysis methods
+   Runs analysis on most recent data every T seconds
+    T = Max # of seconds required to do an update over all previous runs
+    T = 0 (initially)
+
+CLASSVIEW
+ Main
+  Roles
+   initialization (TODO: define this)
+   starts Stream, GUI, and Analysis Threads
+ StreamThread
+ StockRecord
+ GUIThread
+  has MessageQueue (updated by StreamThread)
+ AnalysisThread
+  has MessageQueue (updated by StreamThread)
+ ConsoleInputThread (so the GUI doesn't stop updating while this happens)
+
+
